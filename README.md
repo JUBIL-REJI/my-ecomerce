@@ -1,3 +1,2 @@
-# React + Vite
-
+jubil-ecomerce.netlify.app
 
