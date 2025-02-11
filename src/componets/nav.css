@@ -1,0 +1,80 @@
+:root {
+	--primary: hsl(260, 100%, 80%);
+}
+
+
+
+/* .menu {
+	position: fixed;
+	left: 50%;
+	z-index: 999;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+
+	min-width: 300px;
+}
+ */
+nav,
+.nav-item {
+	display: flex;
+}
+
+nav {
+	
+	background-color: rgb(18, 70, 166);
+  color: white;
+}
+
+.nav-item {
+	flex-direction: row-reverse;
+	font-size: 0.8999rem;
+	line-height: 1rem;
+	align-items: center;
+	min-width: 120px;
+	transition: all 200ms ease;
+	padding: 10px;
+}
+
+.nav-item.active {
+	color: var(--primary);
+	text-shadow: 0 0 3px hsla(260, 100%, 70%, 0.7);
+}
+
+.nav-item a {
+	color: inherit;
+	text-decoration: none;
+	padding: 1ch;
+}
+
+.icon {
+	padding: 1ch;
+	position: relative;
+}
+
+.icon .subicon {
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	background: red;
+	color: white;
+	box-shadow: 0 0 4px rgba(41, 41, 41, 0.405);
+	width: 18px;
+	height: 18px;
+	border-radius: 14px;
+	font-size: 0.7em;
+	font-weight: 700;
+	display: inline-grid;
+	place-items: center;
+	border: 2px solid white;
+	transition: transform 150ms ease-in-out;
+}
+
+.nav-item:hover .subicon {
+	transform: scale(1.2);
+}
